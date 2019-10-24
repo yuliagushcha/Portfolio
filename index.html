@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            <div class="mainInfo">
+                <img class="mainInfo--photo" src="./assets/images/myPhoto.jpg" alt="My photo" width="140">
+                <div class="mainInfo--personalData">
+                    <h1 class="mainInfo--name">Yulia Gushcha</h1>
+                    <p class="mainInfo--socialLinks">
+                        GitHub: <a class="mainInfo--link" href="https://github.com/yuliagushcha">yuliagushcha</a><br>
+                        Telegram: <a class="mainInfo--link" href="https://teleg.run/Yulia_Gushcha">@Yulia_Gushcha</a><br>
+                        VK: <a class="mainInfo--link" href="https://vk.com/Yulia_Gushcha">Yulia Gushcha</a><br>
+                        Instagram: <a class="mainInfo--link" href="instagram.com/cookitee">cookitee</a>
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <div class="visible" id="visible">
+                    <h1 class="mainInfo--name margin">Education</h1>
+                    <div class="education--control">&darr;</div>
+                </div>
+                <div class="hidden" id="hidden">
+                    <p class="education--school">
+                        <span class="mainInfo--link">School</span><br>
+                        2005-2016<br><br>
+                        <span class="mainInfo--link">University</span><br>
+                        2016-2020<br><br>
+                        <span class="mainInfo--link">RSSchool Courses</span><br>
+                        2019-2020
+                    </p>
+                </div>
+            </div>
+            <div class="projects">
+                <h1 class="mainInfo--name margin">Projects</h1>
+                <div class="projects--items">
+                    <div class="item active">
+                        <div class="projects--description">
+                            <div class="projects--name">
+                                <p class="projects--textHeader">theyalow</p>
+                                <ul class="projects--info">
+                                    <li>interactive</li>
+                                    <li>responsive</li>
+                                    <li>beautiful</li>
+                                </ul>
+                                <button type="button" class="button" onclick="location.href = './projects/theyalow/index.html'">
+                                    <p class="button--text">
+                                        Click<br>here / on image<br>to see the project
+                                    </p>
+                                    <p class="button--control">&gt;</p>
+                                </button>
+                            </div>
+                            <div class="circleYalow"></div>
+                            <div class= "theyalowInfo">
+                                    <p class="projects--textHeader">theyalow</p>
+                                    <ul class="projects--info">
+                                        <li>interactive</li>
+                                        <li>responsive</li>
+                                        <li>beautiful</li>
+                                    </ul>
+                                </div>
+                            <a href="./projects/theyalow/index.html"><img class="projects--image" src="./theyalow.png" width="70%" alt="project1"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="projects--description">
+                            <div class="projects--name">
+                                <p class="projects--textHeader">repair-design-project</p>
+                                <ul class="projects--info">
+                                    <li>interactive</li>
+                                    <li>responsive</li>
+                                    <li>beautiful</li>
+                                </ul>
+                                <button type="button" class="button" onclick="location.href = './projects/repair-design-project/index.html'">
+                                    <p class="button--text">
+                                        Click<br>here / on image<br>to see the project
+                                    </p>
+                                    <p class="button--control">&gt;</p>
+                                </button>
+                            </div>
+                            <div class="circleRepair"></div>
+                            <div class= "repairInfo">
+                                    <p class="projects--textHeader">repair-design-project</p>
+                                    <ul class="projects--info">
+                                        <li>interactive</li>
+                                        <li>responsive</li>
+                                        <li>beautiful</li>
+                                    </ul>
+                                </div>
+                            <a href="./projects/repair-design-project/index.html"><img class="projects--image" src="./repair.png" width="70%" alt="project2"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects--control left">
+                    <div class="projects--arrow left">&lt;</div>
+                </div>
+                <div class="projects--control right">
+                    <div class="projects--arrow right">&gt;</div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
