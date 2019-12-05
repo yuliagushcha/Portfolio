@@ -56,7 +56,6 @@
   flex-wrap: wrap;
   flex-grow: 1;
   max-width: 1440px;
-  height: 10150px;
   margin: 0 auto;
 }
 
@@ -95,7 +94,7 @@
   text-decoration: none;
   color: #FFFFFF;
 }
-.header .navbar--navLink-selected, .footer .navbar--navLink-selected {
+.header .navbar--navLink:hover, .footer .navbar--navLink:hover {
   text-decoration: none;
   margin-left: 0px;
   color: #E3B873;
@@ -118,9 +117,12 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border-radius: 2px;
+  background: none;
+}
+.header .phoneCall--phoneButton:hover, .footer .phoneCall--phoneButton:hover {
   background: #E3B873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  border-radius: 2px;
   border: none;
 }
 
@@ -156,6 +158,9 @@
   text-decoration: none;
   color: #E3B873;
 }
+.main .beginner--sidebar1Link:hover {
+  font-size: 15px;
+}
 .main .beginner--brochure {
   display: flex;
   flex-direction: column;
@@ -188,23 +193,10 @@
   line-height: 30px;
   color: #FFFFFF;
 }
-.main .beginner--brochureButton1 {
-  margin-top: 41px;
-  margin-left: 60px;
-  width: 207px;
-  height: 51px;
-  background: #E3B873;
-  border-radius: 2px;
-  border: none;
-  font-family: "FuturaDemiC";
-  font-size: 13px;
-  line-height: 15px;
-  text-align: center;
-  color: #FFFFFF;
-}
 .main .beginner--brochureButton2 {
   width: 207px;
   height: 51px;
+  margin-top: 41px;
   background: none;
   border: 1px solid #FFFFFF;
   border-radius: 2px;
@@ -214,8 +206,19 @@
   text-align: center;
   color: #FFFFFF;
 }
+.main .beginner--brochureButton2:hover {
+  background: #E3B873;
+  order: none;
+}
 .main .beginner--brochureButton2-m {
   display: none;
+}
+.main .beginner--brochureButton2-m:hover {
+  background: #E3B873;
+  order: none;
+}
+.main .first {
+  margin-left: 60px;
 }
 .main .scroll {
   position: absolute;
@@ -235,16 +238,17 @@
   background-color: #131313;
   text-align: center;
 }
-.main .scroll:hover {
-  font-size: 16px;
-  cursor: pointer;
-}
 .main .scroll--text {
   display: flex;
   align-items: center;
 }
 .main .scroll--svg {
   padding-left: 12px;
+}
+.main .scroll--svg:hover {
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
 }
 .main .completedProjects {
   display: flex;
@@ -328,6 +332,24 @@
 .main .completedProjects--navigation {
   cursor: pointer;
 }
+.main .completedProjects--navigation:hover {
+  box-shadow: 0 0 10px #959595;
+}
+.main .completedProjects--navigationPoints {
+  display: flex;
+  justify-content: space-around;
+  width: 87px;
+}
+.main .completedProjects--point {
+  width: 9px;
+  height: 9px;
+  background: #959595;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main .completedProjects--point:hover {
+  background: #FFFFFF;
+}
 .main .completedProjects--images {
   width: 100%;
   max-width: 933.88px;
@@ -358,15 +380,8 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
 }
-.main .completedProjects--navbarLinks-selected {
+.main .completedProjects--navbarLinks:hover {
   padding-bottom: 6.68px;
-  text-decoration: none;
-  font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
   color: #E3B873;
   border-bottom: 1px solid #E3B873;
 }
@@ -378,6 +393,10 @@
   top: -280px;
   left: 750px;
   cursor: pointer;
+  overflow: hidden;
+}
+.main .completedProjects--scrollButtonSVG:hover {
+  width: 90px;
 }
 .main .completedProjects--onlineControl {
   display: flex;
@@ -471,9 +490,13 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  color: black;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+.main .registration--submitButton:hover {
   color: #FFFFFF;
   background: #E3B873;
-  border-radius: 2px;
   border: none;
 }
 .main .registration--agreement {
@@ -589,6 +612,7 @@
   background-color: #FFFFFF;
 }
 .main .request--sectionOne {
+  position: relative;
   width: 860px;
   height: 645px;
   background-image: url("./assets/images/image 6.1.png");
@@ -626,28 +650,28 @@
   color: #363636;
 }
 .main .request--smallEllipseFirst {
-  top: 3574.22px;
+  top: 112px;
   left: 358px;
 }
 .main .request--smallEllipseFirst::after {
   content: "Our specialist will arrive for measurements per day contact, or appoint a date convenient for you";
 }
 .main .request--smallEllipseSecond {
-  top: 3685.52px;
+  top: 241px;
   left: 428.85px;
 }
 .main .request--smallEllipseSecond::after {
   content: "Free metering";
 }
 .main .request--smallEllipseThird {
-  top: 3845.14px;
+  top: 411px;
   left: 445px;
 }
 .main .request--smallEllipseThird::after {
   content: "Free consultation";
 }
 .main .request--smallEllipseFourth {
-  top: 4007.11px;
+  top: 557px;
   left: 366.79px;
 }
 .main .request--smallEllipseFourth::after {
@@ -719,14 +743,19 @@
   width: 213px;
   height: 51px;
   margin-left: 196px;
-  background: #E3B873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   font-family: "FuturaDemiC";
   font-size: 13px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  background: #131313;
   color: #FFFFFF;
+  border: 1px solid white;
+}
+.main .request--submitButton:hover {
+  color: #FFFFFF;
+  background: #E3B873;
   border: none;
 }
 .main .request--helpSaving {
@@ -782,7 +811,7 @@
   color: #FFFFFF;
   cursor: pointer;
 }
-.main .photoExamples--listItems-selected {
+.main .photoExamples--listItems:hover {
   width: max-content;
   font-family: "Proxima Nova";
   font-size: 20px;
@@ -912,6 +941,9 @@
 .main .aboutUS .new {
   width: 287px !important;
 }
+.main .aboutUS .morePoints {
+  width: 164px !important;
+}
 .main .aboutUS--sixSteps {
   display: flex;
   flex-direction: row;
@@ -985,14 +1017,9 @@
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 18px;
-  color: #FFFFFF;
-  opacity: 0.3;
+  color: #504a4a;
 }
-.main .aboutUS--step-selected {
-  margin-bottom: 36px;
-  font-family: "FuturaBookC";
-  font-size: 15px;
-  line-height: 18px;
+.main .aboutUS--step:hover {
   color: #FFFFFF;
 }
 .main .aboutUS--stepNumber {
@@ -1140,6 +1167,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
   margin-top: 39px;
 }
 .main .ourClients--oneClientBox {
@@ -1220,8 +1248,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 8824.34px;
-  left: 291px;
+  top: -214px;
   width: 100%;
   max-width: 883px;
   height: 445.32px;
@@ -1278,6 +1305,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   height: 953.9px;
   background-image: url("./assets/images/image 7.1.png");
   background-repeat: no-repeat;
@@ -1305,9 +1333,12 @@
   flex-direction: row;
   justify-content: space-between;
   width: 71px;
+  height: 40px;
   margin-bottom: 43.29px;
 }
-.main .map--SVG {
+.main .map--SVG:hover {
+  width: 33px;
+  height: 33px;
   cursor: pointer;
 }
 
@@ -1601,7 +1632,7 @@
 
   .questions {
     height: 527.32px !important;
-    top: 7923.34px !important;
+    top: -17px !important;
     left: 0px !important;
   }
   .questions .inputMargin {
@@ -1659,6 +1690,14 @@
     display: none !important;
   }
 
+  .first {
+    display: block !important;
+    margin-top: 32px !important;
+    margin-left: 18px !important;
+    width: 338.61px !important;
+    border-radius: 0px !important;
+  }
+
   .beginner {
     height: 476px !important;
   }
@@ -1676,12 +1715,6 @@
     margin-top: 16px !important;
     font-size: 18px !important;
     line-height: 24px !important;
-  }
-  .beginner--brochureButton1 {
-    margin-top: 32px !important;
-    margin-left: 18px !important;
-    width: 338.61px !important;
-    border-radius: 0px !important;
   }
   .beginner--brochureButton2-m {
     display: block !important;
